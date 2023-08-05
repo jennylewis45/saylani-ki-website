@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+<!--     
+   <link rel="stylesheet" href="saleind.html">
+   <link rel="stylesheet" href="signup.html">
+   <link rel="stylesheet" href="signin.html">
+   <link rel="stylesheet" href="category.html">
+   <link rel="stylesheet" href="sale.html">
+   <link rel="stylesheet" href="aditem.html">
+   <link rel="stylesheet" href="salelogout.html"> -->
+</head>
+<body>
+<h1 class="green-heading">Get Started</h1>
+<p class="blue-para">Online Marketplace</p>
+<form action="#">
+    <!-- <input type="text" name="username" placeholder="Username"> <img src="User name icon.png" alt=""> -->
+    <br>
+    <br>
+    <!-- <input type="text" name="contact" placeholder="Contact"> <img src="Frame.png" alt=""> -->
+    <br>
+    <br>
+    <input id="name" type="text" name="Email" placeholder="Email"> <img src="Email icon.png" alt="">
+    <br>
+    <br>
+    <input id="password" type="text" name="password" placeholder="Password"> <img src="Password icon.png" alt="">
+  </form>
+  <br> 
+  <br>
+
+
+
+<input id="saleButton" type="radio" name="gender" value="male" />Sale
+
+<input id="purchaseButton" type="radio" name="gender" value="male" />Purchase
+
+<script>
+    document.getElementById("saleButton").addEventListener("click", function() {
+        document.querySelector(".purchase-ui").style.display = "none";
+        document.querySelector(".sale-ui").style.display = "block";
+    });
+
+    document.getElementById("purchaseButton").addEventListener("click", function() {
+        document.querySelector(".sale-ui").style.display = "none";
+        document.querySelector(".purchase-ui").style.display = "block";
+    });
+</script>
+ 
+  
+  <button id="signupButton" class="green-button">Sign Up</button>
+  <br>
+  <div class="flex justify-center mt-5 md:ml-10 items-center">Already have an account? <a class="underline font-medium ml-2 block" href="signin.html">Sign In</a></div>
+  <script src="index.js"></script>
+  
+  
+
+  
+</body>
+</html>
